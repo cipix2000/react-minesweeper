@@ -1,3 +1,3 @@
 # react-minesweeper
 
-My attempt at learning rect by writing uet another minesweeper game.
+My attempt at learning react by writing yet another minesweeper game.
