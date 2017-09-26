@@ -1,0 +1,142 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-body {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.BoardFrame {
+    border: 20px solid #D3D3D3;
+    padding: 0px;
+    align-content: center;
+    background-color: #D3D3D3;
+}
+
+.Board {
+    border: 3px solid;
+    border-color: #aaa #e8e8e8 #e8e8e8 #aaa;
+    padding: 0px;
+    align-content: center;
+    background-color: #D3D3D3;
+}
+
+.BoardButtons {
+    border: 3px solid;
+    border-color: #aaa #e8e8e8 #e8e8e8 #aaa;
+    padding: 0px;
+    align-content: center;
+    background-color: #D3D3D3;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.BoardTable {
+    display: table;
+}
+
+.BoardRow {
+    display: table-row;
+}
+
+.BoardCell {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.Minesweeper-button {
+    width: 32px;
+    height: 32px;
+    display: block;
+    border: 3px solid;
+    border-color: #e8e8e8 #aaa #aaa #e8e8e8;
+    background-color: #D3D3D3;
+}
+
+.Minesweeper-button:focus {
+    outline: none;
+}
+
+.Minesweeper-button.visible {
+    width: 32px;
+    height: 32px;
+    display: block;
+    border: 1px solid darkgrey;
+}
+
+.Minesweeper-button.mark {
+    background-image: url('./flag.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Minesweeper-button.visible.mine {
+    background-image: url('./mine.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.status {
+    width: 32px;
+    height: 32px;
+    display: inline;
+    border: 2px solid;
+    border-color: #e8e8e8 #aaa #aaa #e8e8e8;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+    margin-bottom: 10px;
+}
+
+.status:focus {
+    outline: none;
+}
+
+.status.s0 {
+    background-image: url(./worried-face.png);
+}
+
+.status.s1 {
+    background-image: url(./dizzy-face.png);
+}
+
+.status.s2 {
+    background-image: url(./smiling-face.png);
+}
+
+span.mines {
+    float: left;
+}
+
+span.time {
+    float: right;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
